@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgastrostock_landingpage=self.webpackChunkgastrostock_landingpage||[]).push([[647],{8122:(e,s,a)=>{a.r(s),a.d(s,{default:()=>o});a(6540);var r=a(4164),n=a(1082),t=a(204),c=a(2831),u=a(1410),l=a(4848);function o(e){return(0,l.jsx)(n.e3,{className:(0,r.A)(t.G.wrapper.docsPages),children:(0,l.jsx)(u.A,{children:(0,c.v)(e.route.routes)})})}}}]);

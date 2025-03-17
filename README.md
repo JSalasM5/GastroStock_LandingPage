@@ -1,1 +1,0 @@
-# GastroStock_LandingPage

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgastrostock_landingpage=self.webpackChunkgastrostock_landingpage||[]).push([[903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/GastroStock_LandingPage/blog","blogTitle":"Blog","authorsListPath":"/GastroStock_LandingPage/blog/authors"}')}}]);

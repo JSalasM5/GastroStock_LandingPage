@@ -13,7 +13,7 @@ export default function Home() {
     <Layout title="GastroStock" description="Optimiza tu inventario con IA">
       <header className={styles.hero} style={{ paddingTop: '100px', paddingBottom: '150px', backgroundImage: 'url(/img/hero-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container" data-aos="fade-up" style={{ textAlign: 'center' }}>
-          <img src="/img/logo_letras.png" alt="GastroStock Logo" className={styles.logo} style={{ width: '250px', marginBottom: '20px' }} />
+          <img src="/GastroStock_LandingPage/img/logo_letras.png" alt="Logo Letras GastroStock" />
           <h1>Almacén en orden, ¡cocina en marcha! 🍽️📦</h1>
           <p>Optimiza tu inventario, reduce desperdicios y aumenta tus beneficios con GastroStock.</p>
           <div className={styles.buttons}>
@@ -21,23 +21,23 @@ export default function Home() {
           </div>
         </div>
       </header>
-
+      
       <section className={styles.features} style={{ backgroundColor: '#a92e4f', color: 'white', textAlign: 'left', paddingTop: '120px', paddingBottom: '120px' }}>
         <div className="container">
           <h2 data-aos="fade-right">¿Por qué elegir GastroStock? 🤔</h2>
           <div className={styles.grid}>
             <div className={styles.feature} data-aos="fade-right" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left' }}>
-              <img src="/img/ia.png" alt="IA Predictiva" style={{ width: '400px', marginBottom: '15px' }} />
+              <img src="/GastroStock_LandingPage/img/ia.jpg" alt="IA Predictiva" style={{ width: '400px', marginBottom: '15px' }} />
               <h3>IA Predictiva</h3>
               <p>Anticípate a la demanda y optimiza compras con inteligencia artificial.</p>
             </div>
             <div className={styles.feature} data-aos="fade-up" data-aos-delay="200" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-              <img src="/img/tpv.jpg" alt="TPV Integrado" style={{ width: '400px', marginBottom: '15px' }} />
+              <img src="/GastroStock_LandingPage/img/tpv.jpg" alt="TPV Integrado" style={{ width: '400px', marginBottom: '15px' }} />
               <h3>TPV Integrado</h3>
               <p>Gestión de cobros y stock en un solo lugar.</p>
             </div>
             <div className={styles.feature} data-aos="fade-left" data-aos-delay="400" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', textAlign: 'right' }}>
-              <img src="/img/alerta.jpg" alt="Alertas Inteligentes" style={{ width: '400px', marginBottom: '15px' }} />
+              <img src="/GastroStock_LandingPage/img/alerta.jpg" alt="Alertas Inteligentes" style={{ width: '400px', marginBottom: '15px' }} />
               <h3>Alertas Inteligentes</h3>
               <p>Recibe avisos antes de que te quedes sin ingredientes clave.</p>
             </div>
@@ -53,43 +53,43 @@ export default function Home() {
             {[
               {
                 title: 'Project Manager 👔', members: [
-                  { name: 'Raúl Toro', role: '', img: '/img/team/raul.jpg' }
+                  { name: 'Raúl Toro', role: '', img: '/GastroStock_LandingPage/img/team/raul.jpg' }
                 ]
               },
               {
                 title: 'Relaciones Públicas 📞', members: [
-                  { name: 'Jesús Salas', role: 'TM', img: '/img/team/jesus.jpg' },
-                  { name: 'Alonso Portillo', role: '', img: '/img/team/alonso.jpg' },
-                  { name: 'Alexis Molins', role: '', img: '/img/team/alexis.jpg' }
+                  { name: 'Jesús Salas', role: 'TM', img: '/GastroStock_LandingPage/img/team/jesus.jpg' },
+                  { name: 'Alonso Portillo', role: '', img: '/GastroStock_LandingPage/img/team/alonso.jpg' },
+                  { name: 'Alexis Molins', role: '', img: '/GastroStock_LandingPage/img/team/alexis.jpg' }
                 ]
               },
               {
                 title: 'Android 📱', members: [
-                  { name: 'Carlos Martín de Prado', role: 'TM', img: '/img/team/carlos.jpg' },
-                  { name: 'Óscar Menéndez', role: '', img: '/img/team/oscar.jpg' },
-                  { name: 'Lidia Jiménez', role: '', img: '/img/team/lidia.jpg' },
-                  { name: 'Álvaro Ruiz', role: '', img: '/img/team/alvaro.jpg' }
+                  { name: 'Carlos Martín de Prado', role: 'TM', img: '/GastroStock_LandingPage/img/team/carlos.jpg' },
+                  { name: 'Óscar Menéndez', role: '', img: '/GastroStock_LandingPage/img/team/oscar.jpg' },
+                  { name: 'Lidia Jiménez', role: '', img: '/GastroStock_LandingPage/img/team/lidia.jpg' },
+                  { name: 'Álvaro Ruiz', role: '', img: '/GastroStock_LandingPage/img/team/alvaro.jpg' }
                 ]
               },
               {
                 title: 'QA/Testing 🧪', members: [
-                  { name: 'Julio Solís', role: 'TM', img: '/img/team/julio.jpg' },
-                  { name: 'Mario Zambrano', role: '', img: '/img/team/mario.jpg' }
+                  { name: 'Julio Solís', role: 'TM', img: '/GastroStock_LandingPage/img/team/julio.jpg' },
+                  { name: 'Mario Zambrano', role: '', img: '/GastroStock_LandingPage/img/team/mario.jpg' }
                 ]
               },
               {
                 title: 'FullStack 💻', members: [
-                  { name: 'Alejandro Vargas', role: 'TM', img: '/img/team/alejandro.jpg' },
-                  { name: 'José Miguel Iborra', role: '', img: '/img/team/josibocon.jpg' },
-                  { name: 'Ibai Pérez', role: '', img: '/img/team/ibai.jpg' },
-                  { name: 'Francisco Manuel Sabido', role: '', img: '/img/team/fran.jpg' },
-                  { name: 'David Vicente', role: '', img: '/img/team/david.jpg' }
+                  { name: 'Alejandro Vargas', role: 'TM', img: '/GastroStock_LandingPage/img/team/alejandro.jpg' },
+                  { name: 'José Miguel Iborra', role: '', img: '/GastroStock_LandingPage/img/team/josibocon.jpg' },
+                  { name: 'Ibai Pérez', role: '', img: '/GastroStock_LandingPage/img/team/ibai.jpg' },
+                  { name: 'Francisco Manuel Sabido', role: '', img: '/GastroStock_LandingPage/img/team/fran.jpg' },
+                  { name: 'David Vicente', role: '', img: '/GastroStock_LandingPage/img/team/david.jpg' }
                 ]
               },
               {
                 title: 'Inteligencia Artificial 🤖', members: [
-                  { name: 'Pablo Rufián', role: 'TM', img: '/img/team/pablo.jpg' },
-                  { name: 'Rafael Molina', role: '', img: '/img/team/rafa.jpg' }
+                  { name: 'Pablo Rufián', role: 'TM', img: '/GastroStock_LandingPage/img/team/pablo.jpg' },
+                  { name: 'Rafael Molina', role: '', img: '/GastroStock_LandingPage/img/team/rafa.jpg' }
                 ]
               }
             ].map((department, deptIndex) => (
@@ -112,7 +112,7 @@ export default function Home() {
 
       <section className={styles.testimonials} style={{ backgroundColor: '#a92e4f', color: 'white', textAlign: 'left', paddingTop: '120px', paddingBottom: '120px', }}>
         <div className="container" data-aos="fade-left" style={{ display: 'flex', alignItems: 'center' }}>
-          <img src="/img/mascota.png" alt="Mascota GastroStock" className={styles.mascota} style={{ width: '300px', marginRight: '30px' }} />
+          <img src="/GastroStock_LandingPage/img/mascota.png" alt="Mascota GastroStock" className={styles.mascota} style={{ width: '300px', marginRight: '30px' }} />
           <div>
             <h2>Lo que dicen nuestros clientes ⭐</h2>
             <div className={styles.testimonial}>
@@ -202,7 +202,7 @@ export default function Home() {
           <p>Conéctate con nosotros en Instagram y TikTok para más novedades.</p>
           <div className={styles.qrContainer} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', marginRight: '50px' }}>
-              <img src="/img/qr_insta.png" alt="QR Instagram" className={styles.qr} style={{ width: '100px', marginRight: '15px' }} />
+              <img src="/GastroStock_LandingPage/img/qr_insta.png" alt="QR Instagram" className={styles.qr} style={{ width: '100px', marginRight: '15px' }} />
               <div className={styles.qrArrow}>
                 <svg width="50" height="20" viewBox="0 0 50 20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 10h40l-5-5m5 5l-5 5" stroke="black" strokeWidth="3" fill="none" />
@@ -211,7 +211,7 @@ export default function Home() {
               <p>Instagram</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-              <img src="/img/qr_tiktok.png" alt="QR TikTok" className={styles.qr} style={{ width: '100px', marginRight: '15px' }} />
+              <img src="/GastroStock_LandingPage/img/qr_tiktok.png" alt="QR TikTok" className={styles.qr} style={{ width: '100px', marginRight: '15px' }} />
               <div className={styles.qrArrow}>
                 <svg width="50" height="20" viewBox="0 0 50 20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 10h40l-5-5m5 5l-5 5" stroke="black" strokeWidth="3" fill="none" />

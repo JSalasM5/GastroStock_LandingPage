@@ -27,7 +27,7 @@ export default function Home() {
           <h2 data-aos="fade-right">¿Por qué elegir GastroStock? 🤔</h2>
           <div className={styles.grid}>
             <div className={styles.feature} data-aos="fade-right" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left' }}>
-              <img src="/img/ia.jpg" alt="IA Predictiva" style={{ width: '400px', marginBottom: '15px' }} />
+              <img src="/img/ia.png" alt="IA Predictiva" style={{ width: '400px', marginBottom: '15px' }} />
               <h3>IA Predictiva</h3>
               <p>Anticípate a la demanda y optimiza compras con inteligencia artificial.</p>
             </div>

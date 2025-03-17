@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://JSalasM5.github.io/GastroStock_LandingPage/blog"/>
     <subtitle>GastroStock Blog</subtitle>
-    <icon>https://JSalasM5.github.io/GastroStock_LandingPage/img/favicon.ico</icon>
+    <icon>https://JSalasM5.github.io/GastroStock_LandingPage/GastroStock_LandingPage/img/logo.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://JSalasM5.github.io/GastroStock_LandingPage/blog/welcome</id>

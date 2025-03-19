@@ -107,19 +107,30 @@ export default function Home() {
       </section>
 
       <section className={styles.testimonials} style={{ backgroundColor: '#a92e4f', color: 'white', textAlign: 'center', padding: '120px 0' }}>
-        <div className="container" data-aos="fade-left" style={{ display: 'flex', alignItems: 'center' }}>
-          <img src="/GastroStock_LandingPage/img/mascota.png" alt="Mascota GastroStock" className={styles.mascota} style={{ width: '300px', marginRight: '30px' }} />
-          <div>
+        <div className="container" data-aos="fade-left"
+          style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', textAlign: 'center', gap: '30px' }}>
+
+          {/* Mascota arriba en móviles */}
+          <img src="/GastroStock_LandingPage/img/mascota.png"
+            alt="Mascota GastroStock"
+            className={styles.mascota}
+            style={{ width: '250px', maxWidth: '100%' }} />
+
+          {/* Contenido de testimonios */}
+          <div style={{ maxWidth: '600px' }}>
             <h2>Lo que dicen nuestros clientes ⭐</h2>
-            <div className={styles.testimonial}>
+
+            <div className={styles.testimonial} style={{ marginTop: '20px' }}>
               <p>"Desde que usamos GastroStock, nuestro desperdicio ha bajado un 30% y siempre sabemos qué comprar."</p>
               <h4>- Restaurante La Parrilla</h4>
             </div>
-            <div className={styles.testimonial}>
+
+            <div className={styles.testimonial} style={{ marginTop: '20px' }}>
               <p>"El TPV integrado nos ha ahorrado mucho tiempo y nos permite controlar las ventas y el stock en tiempo real."</p>
               <h4>- Bar El Buen Sabor</h4>
             </div>
           </div>
+
         </div>
       </section>
 

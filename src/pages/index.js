@@ -11,6 +11,29 @@ export default function Home() {
 
   return (
     <Layout title="GastroStock" description="Optimiza tu inventario con IA">
+
+      <style>
+        {`
+          html, body {
+            overflow-x: hidden;
+            max-width: 100%;
+            width: 100%;
+          }
+
+          .container {
+            max-width: 100%;
+            width: 100%;
+            box-sizing: border-box;
+          }
+
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+        `}
+      </style>
+
       <header className={styles.hero} style={{ paddingTop: '100px', paddingBottom: '150px', backgroundImage: 'url(/img/hero-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container" data-aos="fade-up" style={{ textAlign: 'center' }}>
           <img src="/GastroStock_LandingPage/img/logo_letras.png" alt="Logo Letras GastroStock" style={{ maxWidth: '100%', height: 'auto' }} />

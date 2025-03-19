@@ -13,7 +13,7 @@ export default function Home() {
     <Layout title="GastroStock" description="Optimiza tu inventario con IA">
       <header className={styles.hero} style={{ paddingTop: '100px', paddingBottom: '150px', backgroundImage: 'url(/img/hero-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container" data-aos="fade-up" style={{ textAlign: 'center' }}>
-          <img src="/GastroStock_LandingPage/img/logo_letras.png" alt="Logo Letras GastroStock" />
+          <img src="/GastroStock_LandingPage/img/logo_letras.png" alt="Logo Letras GastroStock" style={{ maxWidth: '100%', height: 'auto' }} />
           <h1>Almacén en orden, ¡cocina en marcha! 🍽️📦</h1>
           <p>Optimiza tu inventario, reduce desperdicios y aumenta tus beneficios con GastroStock.</p>
           <div className={styles.buttons}>
@@ -21,31 +21,27 @@ export default function Home() {
           </div>
         </div>
       </header>
-      
-      <section className={styles.features} style={{ backgroundColor: '#a92e4f', color: 'white', textAlign: 'left', paddingTop: '120px', paddingBottom: '120px' }}>
+
+      <section className={styles.features} style={{ backgroundColor: '#a92e4f', color: 'white', textAlign: 'center', padding: '120px 0' }}>
         <div className="container">
           <h2 data-aos="fade-right">¿Por qué elegir GastroStock? 🤔</h2>
-          <div className={styles.grid}>
-            <div className={styles.feature} data-aos="fade-right" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left' }}>
-              <img src="/GastroStock_LandingPage/img/ia.jpg" alt="IA Predictiva" style={{ width: '400px', marginBottom: '15px' }} />
-              <h3>IA Predictiva</h3>
-              <p>Anticípate a la demanda y optimiza compras con inteligencia artificial.</p>
-            </div>
-            <div className={styles.feature} data-aos="fade-up" data-aos-delay="200" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-              <img src="/GastroStock_LandingPage/img/tpv.jpg" alt="TPV Integrado" style={{ width: '400px', marginBottom: '15px' }} />
-              <h3>TPV Integrado</h3>
-              <p>Gestión de cobros y stock en un solo lugar.</p>
-            </div>
-            <div className={styles.feature} data-aos="fade-left" data-aos-delay="400" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', textAlign: 'right' }}>
-              <img src="/GastroStock_LandingPage/img/alerta.jpg" alt="Alertas Inteligentes" style={{ width: '400px', marginBottom: '15px' }} />
-              <h3>Alertas Inteligentes</h3>
-              <p>Recibe avisos antes de que te quedes sin ingredientes clave.</p>
-            </div>
+          <div className={styles.grid} style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '30px' }}>
+            {[
+              { title: "IA Predictiva", text: "Anticípate a la demanda y optimiza compras con inteligencia artificial.", img: "/GastroStock_LandingPage/img/ia.jpg" },
+              { title: "TPV Integrado", text: "Gestión de cobros y stock en un solo lugar.", img: "/GastroStock_LandingPage/img/tpv.jpg" },
+              { title: "Alertas Inteligentes", text: "Recibe avisos antes de que te quedes sin ingredientes clave.", img: "/GastroStock_LandingPage/img/alerta.jpg" }
+            ].map((feature, index) => (
+              <div key={index} className={styles.feature} data-aos="fade-up" style={{ flex: '1 1 300px', textAlign: 'center' }}>
+                <img src={feature.img} alt={feature.title} style={{ maxWidth: '100%', height: 'auto', borderRadius: '10px' }} />
+                <h3>{feature.title}</h3>
+                <p>{feature.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className={styles.team} style={{ backgroundColor: '#ffffff', textAlign: 'center', paddingTop: '120px', paddingBottom: '120px' }}>
+      <section className={styles.team} style={{ backgroundColor: '#ffffff', textAlign: 'center', padding: '120px 0' }}>
         <div className="container" data-aos="fade-up">
           <h2>👨‍💼 Nuestro Equipo</h2>
           <p>Conoce a las personas que hacen posible GastroStock</p>
@@ -98,7 +94,7 @@ export default function Home() {
                 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '30px', marginTop: '20px' }}>
                   {department.members.map((member, index) => (
                     <div key={index} className={styles.teamMember} style={{ width: '200px', textAlign: 'center' }}>
-                      <img src={member.img} alt={member.name} style={{ width: '180px', height: '180px', objectFit: 'cover', borderRadius: '50%', marginBottom: '10px' }} />
+                      <img src={member.img} alt={member.name} style={{ width: '150px', height: '150px', objectFit: 'cover', borderRadius: '50%' }} />
                       <h4>{member.name}</h4>
                       <p>{member.role}</p>
                     </div>
@@ -110,7 +106,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.testimonials} style={{ backgroundColor: '#a92e4f', color: 'white', textAlign: 'left', paddingTop: '120px', paddingBottom: '120px', }}>
+      <section className={styles.testimonials} style={{ backgroundColor: '#a92e4f', color: 'white', textAlign: 'center', padding: '120px 0' }}>
         <div className="container" data-aos="fade-left" style={{ display: 'flex', alignItems: 'center' }}>
           <img src="/GastroStock_LandingPage/img/mascota.png" alt="Mascota GastroStock" className={styles.mascota} style={{ width: '300px', marginRight: '30px' }} />
           <div>
@@ -174,35 +170,42 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.pricing} style={{ backgroundColor: '#a92e4f', color: 'white', textAlign: 'center', paddingTop: '120px', paddingBottom: '120px' }}>
+      <section className={styles.pricing} style={{ backgroundColor: '#a92e4f', color: 'white', textAlign: 'center', padding: '120px 0' }}>
         <div className="container" data-aos="fade-up">
           <h2>💰 Elige tu plan</h2>
-          <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '40px' }}>
-            <div style={{ background: 'white', color: '#000', padding: '20px', borderRadius: '10px', width: '30%' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '30px' }}>
+            <div style={{ background: 'white', color: '#000', padding: '30px', borderRadius: '10px', width: '300px' }}>
               <h3>FREE</h3>
               <p>💵 Gratis</p>
-              <p>✔ Gestión de stock básico</p>
-              <p>✔ Gestión de la oferta y demanda básico</p>
-              <p>✔ Gestión de la base de datos básico</p>
+              <p><strong>✔ Gestión de stock básico</strong> → Permite registrar manualmente entradas y salidas de productos, ayudando a controlar el inventario sin automatización.</p>
+              <p><strong>✔ Gestión de la oferta y demanda básico</strong> → Ofrece estadísticas básicas sobre consumo y disponibilidad de productos sin predicción avanzada.</p>
+              <p><strong>✔ Gestión de la base de datos básico</strong> → Permite almacenar y consultar información esencial sobre productos y proveedores con funcionalidades limitadas.</p>
             </div>
-            <div style={{ background: 'white', color: '#000', padding: '20px', borderRadius: '10px', width: '30%' }}>
+            <div style={{ background: 'white', color: '#000', padding: '30px', borderRadius: '10px', width: '300px' }}>
               <h3>PREMIUM</h3>
               <p>💵 25€/mes</p>
-              <p>✔ Gestión de stock con implementación de IA</p>
-              <p>✔ Gestión de proveedores</p>
-              <p>✔ Mejora significativa de las funciones FREE</p>
+              <p><strong>✔ Gestión de stock con implementación de IA</strong> → Automatiza el control del inventario, reduciendo desperdicios y optimizando las compras basándose en patrones de consumo.</p>
+              <p><strong>✔ Gestión de proveedores</strong> → Permite registrar múltiples proveedores, gestionar pedidos y recibir alertas sobre los mejores momentos para abastecerse.</p>
+              <p><strong>✔ Mejora significativa de las funciones FREE</strong> → Incluye herramientas avanzadas como informes detallados y recomendaciones de compra basado en predicción, todo ello con la mejora y ayuda de nuestra IA para maximizar la automatización y la optimización.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.social} style={{ backgroundColor: '#ffffff', textAlign: 'center', paddingTop: '120px', paddingBottom: '120px' }}>
+      <section className={styles.social} style={{ backgroundColor: '#ffffff', textAlign: 'center', padding: '120px 0' }}>
         <div className="container" data-aos="fade-up">
           <h2>¡Síguenos en redes sociales! 📱</h2>
           <p>Conéctate con nosotros en Instagram y TikTok para más novedades.</p>
-          <div className={styles.qrContainer} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'center', marginRight: '50px' }}>
-              <img src="/GastroStock_LandingPage/img/qr_insta.png" alt="QR Instagram" className={styles.qr} style={{ width: '100px', marginRight: '15px' }} />
+          <div className={styles.qrContainer} style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '30px',
+            marginTop: '40px'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+              <img src="/GastroStock_LandingPage/img/qr_insta.png" alt="QR Instagram" className={styles.qr} style={{ width: '120px', maxWidth: '100%' }} />
               <div className={styles.qrArrow}>
                 <svg width="50" height="20" viewBox="0 0 50 20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 10h40l-5-5m5 5l-5 5" stroke="black" strokeWidth="3" fill="none" />
@@ -210,8 +213,8 @@ export default function Home() {
               </div>
               <p>Instagram</p>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              <img src="/GastroStock_LandingPage/img/qr_tiktok.png" alt="QR TikTok" className={styles.qr} style={{ width: '100px', marginRight: '15px' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+              <img src="/GastroStock_LandingPage/img/qr_tiktok.png" alt="QR TikTok" className={styles.qr} style={{ width: '120px', maxWidth: '100%' }} />
               <div className={styles.qrArrow}>
                 <svg width="50" height="20" viewBox="0 0 50 20" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 10h40l-5-5m5 5l-5 5" stroke="black" strokeWidth="3" fill="none" />
@@ -223,7 +226,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className={styles.contact} style={{ backgroundColor: '#a92e4f', color: 'white', textAlign: 'center', paddingTop: '120px', paddingBottom: '120px' }}>
+      <section id="contact" className={styles.contact} style={{ backgroundColor: '#a92e4f', color: 'white', textAlign: 'center', padding: '120px 0' }}>
         <div className="container" data-aos="fade-up">
           <h2>📩 ¿Tienes dudas? Contáctanos</h2>
           <form style={{ maxWidth: '500px', margin: '0 auto' }}>

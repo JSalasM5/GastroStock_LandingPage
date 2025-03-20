@@ -74,7 +74,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: '/GastroStock_LandingPage/img/logo_letras.png',
+      colorMode: {
+        defaultMode: 'light',  
+        disableSwitch: true,   
+      },
       navbar: {
         title: 'GastroStock',
         logo: {
@@ -82,7 +86,7 @@ const config = {
           src: 'img/logo.ico',
         },
         items: [
-          {
+          /* {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
@@ -93,13 +97,13 @@ const config = {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
-          },
+          }, */
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
+          /* {
             title: 'Docs',
             items: [
               {
@@ -107,25 +111,25 @@ const config = {
                 to: '/docs/intro',
               },
             ],
-          },
+          }, */
           {
-            title: 'Community',
+            title: 'Nuestros enlaces',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'GitHub',
+                href: 'https://github.com/JSalasM5/GastroStock_LandingPage',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Instagram',
+                href: 'https://www.instagram.com/gastro.stock?igsh=MXMybGN3M2ZvaWlrNw==',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'TikTok',
+                href: 'https://www.tiktok.com/@gastro.stock?_t=ZN-8uqWJ9NtP1S&_r=1',
               },
             ],
           },
-          {
+          /* {
             title: 'More',
             items: [
               {
@@ -137,9 +141,9 @@ const config = {
                 href: 'https://github.com/facebook/docusaurus',
               },
             ],
-          },
+          }, */
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} GastroStock.`,
       },
       prism: {
         theme: prismThemes.github,

@@ -160,7 +160,8 @@ export default function Home() {
       <section className={styles.comparisonTable} style={{ backgroundColor: '#ffffff', textAlign: 'center', paddingTop: '120px', paddingBottom: '120px' }}>
         <div className="container" data-aos="fade-up">
           <h2>📊 ¿En qué se diferencia GastroStock?</h2>
-          <table style={{
+            
+            <table style={{
             width: '100%',
             maxWidth: '500px',
             margin: '0 auto',

@@ -157,51 +157,52 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.comparisonTable} style={{ backgroundColor: '#ffffff', textAlign: 'center', paddingTop: '120px', paddingBottom: '120px' }}>
+      <section className={styles.comparisonSection} style={{ backgroundColor: '#ffffff', textAlign: 'center', padding: '120px 0' }}>
         <div className="container" data-aos="fade-up">
           <h2>📊 ¿En qué se diferencia GastroStock?</h2>
-            
-            <table style={{
-            width: '100%',
-            maxWidth: '500px',
-            margin: '0 auto',
-            borderCollapse: 'collapse',
-            background: '#a92e4f',
-            color: '#fff',
-            borderRadius: '10px',
-            overflow: 'hidden',
-            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)'
-          }}>
-            <thead>
-              <tr style={{ background: '#000', color: 'white' }}>
-                <th style={{ padding: '15px', textAlign: 'center', width: '40%' }}>Característica</th>
-                <th style={{ padding: '15px', textAlign: 'center', width: '30%' }}>GastroStock</th>
-                <th style={{ padding: '15px', textAlign: 'center', width: '30%' }}>Otras soluciones</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style={{ background: '#a92e4f' }}>
-                <td style={{ padding: '15px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>🧠 IA predictiva</td>
-                <td style={{ padding: '15px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>✅ Sí</td>
-                <td style={{ padding: '15px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>❌ No</td>
-              </tr>
-              <tr>
-                <td style={{ padding: '15px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>🔔 Alertas personalizadas</td>
-                <td style={{ padding: '15px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>✅ Sí</td>
-                <td style={{ padding: '15px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>🔶 Parcial</td>
-              </tr>
-              <tr>
-                <td style={{ padding: '15px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>📦 Reabastecimiento y control de pérdidas</td>
-                <td style={{ padding: '15px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>✅ Sí</td>
-                <td style={{ padding: '15px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>❌ No</td>
-              </tr>
-              <tr>
-                <td style={{ padding: '15px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>🔮 Predicción de oferta y demanda</td>
-                <td style={{ padding: '15px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>✅ Sí</td>
-                <td style={{ padding: '15px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>❌ No</td>
-              </tr>
-            </tbody>
-          </table>
+          <p>Beneficios exclusivos que ofrecemos a nuestros clientes.</p>
+
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '40px', marginTop: '40px' }}>
+
+            {/* GastroStock Beneficios */}
+            <div style={{
+              background: '#a92e4f',
+              color: 'white',
+              padding: '20px',
+              borderRadius: '10px',
+              width: '350px',
+              textAlign: 'center',
+              boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
+            }}>
+              <h3>✅ GastroStock</h3>
+              <ul style={{ listStyle: 'none', padding: '0' }}>
+                <li>✔ IA predictiva</li>
+                <li>✔ Alertas personalizadas e inteligentes</li>
+                <li>✔ Control sobre el reabastecimiento y control de pérdidas</li>
+                <li>✔ Predicción de oferta y demanda y planificación de pedidos</li>
+              </ul>
+            </div>
+
+            {/* Otras soluciones */}
+            <div style={{
+              background: '#666',
+              color: 'white',
+              padding: '20px',
+              borderRadius: '10px',
+              width: '350px',
+              textAlign: 'center',
+              boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
+            }}>
+              <h3>❌ Otras Soluciones</h3>
+              <ul style={{ listStyle: 'none', padding: '0' }}>
+                <li>✖ Sin IA predictiva</li>
+                <li>✖ Alertas personalizadas, pero básicas</li>
+                <li>✖ Sin control eficiente de pérdidas y reabastecimiento</li>
+                <li>✖ No predicen la demanda ni ayudan a planificar pedidos</li>
+              </ul>
+            </div>
+
+          </div>
         </div>
       </section>
 

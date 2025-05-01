@@ -92,12 +92,12 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},*/
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://ispp-2425-g2.ew.r.appspot.com',
+            label: 'GastroStock App',
             position: 'right',
-          }, */
+          }, 
         ],
       },
       footer: {
@@ -115,6 +115,10 @@ const config = {
           {
             title: 'Nuestros enlaces',
             items: [
+              {
+                label: 'GASTROSTOCK APP',
+                href: 'https://ispp-2425-g2.ew.r.appspot.com',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/JSalasM5/GastroStock_LandingPage',

@@ -99,7 +99,7 @@ const config = {
             position: 'right',
           }, 
           {
-            href: 'https://ispp-2425-g2.ew.r.appspot.com',
+            href: 'https://github.com/JSalasM5/GastroStock_LandingPage/raw/main/GastroStock.apk',
             label: 'GastroStock APK',
             position: 'right',
           }

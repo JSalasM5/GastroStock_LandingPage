@@ -116,7 +116,11 @@ const config = {
             title: 'Nuestros enlaces',
             items: [
               {
-                label: 'GASTROSTOCK APP',
+                label: 'GASTROSTOCK APK',
+                href: 'https://github.com/JSalasM5/GastroStock_LandingPage/raw/main/gastrostock.apk',
+              },
+              {
+                label: 'GASTROSTOCK WEB',
                 href: 'https://ispp-2425-g2.ew.r.appspot.com',
               },
               {

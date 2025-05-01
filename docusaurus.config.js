@@ -117,7 +117,7 @@ const config = {
             items: [
               {
                 label: 'GASTROSTOCK APK',
-                href: 'https://github.com/JSalasM5/GastroStock_LandingPage/raw/main/gastrostock.apk',
+                href: 'https://github.com/JSalasM5/GastroStock_LandingPage/raw/main/GastroStock.apk',
               },
               {
                 label: 'GASTROSTOCK WEB',

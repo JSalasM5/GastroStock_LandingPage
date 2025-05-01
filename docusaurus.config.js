@@ -95,9 +95,14 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'left'},*/
           {
             href: 'https://ispp-2425-g2.ew.r.appspot.com',
-            label: 'GastroStock App',
+            label: 'GastroStock WEB',
             position: 'right',
           }, 
+          {
+            href: 'https://ispp-2425-g2.ew.r.appspot.com',
+            label: 'GastroStock APK',
+            position: 'right',
+          }
         ],
       },
       footer: {
@@ -116,11 +121,11 @@ const config = {
             title: 'Nuestros enlaces',
             items: [
               {
-                label: 'GASTROSTOCK APK',
+                label: 'GastroStock APK',
                 href: 'https://github.com/JSalasM5/GastroStock_LandingPage/raw/main/GastroStock.apk',
               },
               {
-                label: 'GASTROSTOCK WEB',
+                label: 'GastroStock WEB',
                 href: 'https://ispp-2425-g2.ew.r.appspot.com',
               },
               {
